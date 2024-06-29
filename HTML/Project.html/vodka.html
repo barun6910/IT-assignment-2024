@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vodka - DaruPasalNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="DaruPasalNepal Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Available Liquors</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Delivery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="vodka">
+        <h1>Available Vodkas</h1>
+        <div class="liquor-item" data-price="3000">
+          <img src="8848.jpg" alt="8848 1L" />
+          <p>8848 1L</p>
+          <span>Npr.3000</span>
+          <button onclick="addToCart('8848 1L', 3000)">Add to Cart</button>
+        </div>
+        <div class="liquor-item" data-price="7000">
+          <img src="absolute.jpg" alt="Absolute 1L" />
+          <p>Absolute 1L</p>
+          <span>Npr.7000</span>
+          <button onclick="addToCart('Absolute 1L', 7000)">Add to Cart</button>
+        </div>
+        <div class="liquor-item" data-price="3000">
+          <img style="height: 140px" src="ruslan.jpg" alt="Ruslan 1L" />
+          <p>Ruslan 1L</p>
+          <span>Npr.3000</span>
+          <button onclick="addToCart('Ruslan 1L', 3000)">Add to Cart</button>
+        </div>
+        <div class="liquor-item" data-price="2500">
+          <img src="yeti.jpg" alt="Yeti 1L" />
+          <p>Yeti 1L</p>
+          <span>Npr.2500</span>
+          <button onclick="addToCart('Yeti 1L', 2500)">Add to Cart</button>
+        </div>
+      </section>
+
+      <div id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: Npr.<span id="total">0</span></p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 DaruPasalNepal. All rights reserved.</p>
+      <p>
+        Follow us on:
+        <a href="https://www.facebook.com/" class="social-link">Facebook</a> |
+        <a href="https://www.instagram.com/" class="social-link">Instagram</a> |
+        <a href="https://www.twitter.com/" class="social-link">Twitter</a>
+      </p>
+    </footer>
+  </body>
+</html>

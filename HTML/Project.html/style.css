@@ -1,0 +1,163 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: red;
+    padding: 10px;
+}
+
+.logo {
+    height: 200px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: blue;
+    color: white;
+}
+
+.liquor-options {
+    margin-top: 20px;
+}
+
+.liquor-options button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.liquor-options button:hover {
+    background-color: blue;
+    color: white;
+}
+
+.liquor-item {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.liquor-item img {
+    width: 100px;
+    height: auto;
+}
+
+.liquor-item button {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.liquor-item button:hover {
+    background-color: blue;
+    color: white;
+}
+
+#cart {
+    margin-top: 30px;
+}
+
+#cart h2 {
+    margin-bottom: 10px;
+}
+
+#cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+ 
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: red;
+}
+#contact {
+    text-align: center;
+    margin: 50px auto;
+    width: 50%;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-form label {
+    margin: 10px 0 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: blue;
+    color: white;
+}

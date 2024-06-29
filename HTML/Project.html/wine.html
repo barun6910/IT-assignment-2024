@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wine - DaruPasalNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="DaruPasalNepal Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Available Liquors</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Delivery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="wine">
+        <h1>Available Wines</h1>
+        <div class="liquor-item" data-price="6000">
+          <img src="bottega.jpg" alt="Bottega Venedika Venezia DOC 750ML" />
+          <p>Bottega Venedika Venezia DOC 750ML</p>
+          <span>Npr.6000</span>
+          <button
+            onclick="addToCart('Bottega Venedika Venezia DOC 750ML', 6000)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="liquor-item" data-price="3500">
+          <img
+            src="baron_darchange.jpg"
+            alt="Baron d'Archange White Cuvee Prestige Corbieres 750ML"
+          />
+          <p>Baron d'Archange White Cuvee Prestige Corbieres 750ML</p>
+          <span>Npr.3500</span>
+          <button
+            onclick="addToCart('Baron dArchange White Cuvee Prestige Corbieres 750ML', 3500)"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <div class="liquor-item" data-price="41000">
+          <img src="dom_perignon.jpg" alt="Dom Perignon Champagne 750ML" />
+          <p>Dom Perignon Champagne 750ML</p>
+          <span>Npr.41000</span>
+          <button onclick="addToCart('Dom Perignon Champagne 750ML', 41000)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="liquor-item" data-price="3500">
+          <img src="mateus_rose.jpg" alt="Mateus Rose Original 750ML" />
+          <p>Mateus Rose Original 750ML</p>
+          <span>Npr.3500</span>
+          <button onclick="addToCart('Mateus Rose Original 750ML', 3500)">
+            Add to Cart
+          </button>
+        </div>
+      </section>
+
+      <div id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: Npr.<span id="total">0</span></p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 DaruPasalNepal. All rights reserved.</p>
+      <p>
+        Follow us on:
+        <a href="https://www.facebook.com/" class="social-link">Facebook</a> |
+        <a href="https://www.instagram.com/" class="social-link">Instagram</a> |
+        <a href="https://www.twitter.com/" class="social-link">Twitter</a>
+      </p>
+    </footer>
+  </body>
+</html>

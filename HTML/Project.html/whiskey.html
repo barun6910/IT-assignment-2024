@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whiskey - DaruPasalNepal</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="DaruPasalNepal Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Available Liquors</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Delivery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="whiskey">
+        <h1>Available Whiskeys</h1>
+        <div class="liquor-item" data-price="32000">
+          <img src="blue_label.jpg" alt="Blue Label 1L" />
+          <p>Blue Label 1L</p>
+          <span>Npr.32000</span>
+          <button onclick="addToCart('Blue Label 1L', 32000)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="liquor-item" data-price="8000">
+          <img
+            style="height: 180px"
+            src="jagermeister.jpg"
+            alt="Jagermeister 1L"
+          />
+          <p>Jagermeister 1L</p>
+          <span>Npr.8000</span>
+          <button onclick="addToCart('Jagermeister 1L', 8000)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="liquor-item" data-price="9200">
+          <img
+            style="height: 180px"
+            width="150px"
+            src="double_black.jpg"
+            alt="Double Black 1L"
+          />
+          <p>Double Black 1L</p>
+          <span>Npr.9200</span>
+          <button onclick="addToCart('Double Black 1L', 9200)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="liquor-item" data-price="13000">
+          <img
+            style="height: 180px"
+            src="glenfiddich.jpg"
+            alt="Glenfiddich 1L"
+          />
+          <p>Glenfiddich 1L</p>
+          <span>Npr.13000</span>
+          <button onclick="addToCart('Glenfiddich 1L', 13000)">
+            Add to Cart
+          </button>
+        </div>
+        <div class="liquor-item" data-price="14000">
+          <img style="height: 180px" src="singleton.jpg" alt="Singleton 1L" />
+          <p>Singleton 1L</p>
+          <span>Npr.14000</span>
+          <button onclick="addToCart('Singleton 1L', 14000)">
+            Add to Cart
+          </button>
+        </div>
+      </section>
+
+      <div id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: Npr.<span id="total">0</span></p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 DaruPasalNepal. All rights reserved.</p>
+      <p>
+        Follow us on:
+        <a href="https://www.facebook.com/" class="social-link">Facebook</a> |
+        <a href="https://www.instagram.com/" class="social-link">Instagram</a> |
+        <a href="https://www.twitter.com/" class="social-link">Twitter</a>
+      </p>
+    </footer>
+  </body>
+</html>
